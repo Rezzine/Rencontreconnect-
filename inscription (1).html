@@ -1,26 +1,35 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <title>Créer un compte - RencontreConnect</title>
-  <style>
-    body { font-family: Arial, sans-serif; padding: 20px; background-color: #f9f2f4; }
-    form { max-width: 400px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    input, button { width: 100%; padding: 10px; margin: 10px 0; }
-    button { background-color: #d63384; color: white; border: none; border-radius: 4px; cursor: pointer; }
-  </style>
+  <meta charset="UTF-8">
+  <title>Créer un compte</title>
 </head>
 <body>
-  <h1>Créer un compte</h1>
-  <form>
+  <form onsubmit="return inscrireUtilisateur()">
+    <h2>Créer un compte</h2>
     <label>Nom d'utilisateur :</label>
-    <input type="text" name="username" required>
+    <input type="text" id="username" required><br><br>
+    
     <label>Email :</label>
-    <input type="email" name="email" required>
+    <input type="email" id="email" required><br><br>
+    
     <label>Mot de passe :</label>
-    <input type="password" name="password" required>
+    <input type="password" id="password" required><br><br>
+    
     <button type="submit">S'inscrire</button>
   </form>
+
+  <script>
+    function inscrireUtilisateur() {
+      // Stocker les données (optionnel)
+      const nom = document.getElementById("username").value;
+      localStorage.setItem("utilisateur", nom);
+
+      // Rediriger vers la page d'accueil
+      window.location.href = "accueil.html";
+      return false; // Empêche le rechargement de la page
+    }
+  </script>
 </body>
 </html>
+ 
