@@ -1,14 +1,66 @@
-  <!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>RencontreConnect</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #ffccd5, #ffe6e6);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+      color: #c2185b;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 2em;
+    }
+    .buttons {
+      display: flex;
+      gap: 1em;
+      flex-wrap: wrap;
+    }
+    .buttons a {
+      padding: 12px 24px;
+      background-color: #c2185b;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .buttons a:hover {
+      background-color: #ad1457;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 2em; }
+      p { font-size: 1em; }
+    }
+  </style>
 </head>
 <body>
   <h1>Bienvenue sur RencontreConnect</h1>
-  <p>Site de rencontre basé sur le respect.</p>
+  <p>Un site de rencontre basé sur le respect, pour tous.</p>
+  <div class="buttons">
+    <a href="#">Créer un compte</a>
+    <a href="#">Se connecter</a>
+    <a href="#">Découvrir</a>
+  </div>
 </body>
 </html>
+
+
 
 
 
