@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
@@ -13,7 +13,7 @@
     header {
       background-color: #e91e63;
       color: white;
-      padding: 20px 10px;
+      padding: 20px;
       text-align: center;
     }
     nav {
@@ -22,6 +22,9 @@
       justify-content: center;
       gap: 20px;
       padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     nav a {
       color: white;
@@ -29,7 +32,7 @@
       font-weight: bold;
     }
     section {
-      padding: 40px 20px;
+      padding: 60px 20px;
     }
     h2 {
       color: #c2185b;
@@ -42,7 +45,7 @@
     }
   </style>
 </head>
-<body id="top">
+<body id="accueil">
 
   <header>
     <h1>RencontreConnect</h1>
@@ -50,42 +53,40 @@
   </header>
 
   <nav>
-    <a href="#top">Accueil</a>
+    <a href="#accueil">Accueil</a>
     <a href="#fonctionnalites">Fonctionnalités</a>
     <a href="#apropos">À propos</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="bienvenue">
+  <section id="accueil">
     <h2>Bienvenue sur RencontreConnect</h2>
-    <p>
-      Notre plateforme met l'accent sur le respect, la sécurité et la vraie connexion entre les personnes.
-    </p>
+    <p>Notre plateforme met l'accent sur le respect, la sécurité et la vraie connexion entre les personnes. Rejoignez une communauté où chaque individu est valorisé et écouté.</p>
   </section>
 
   <section id="fonctionnalites">
     <h2>Fonctionnalités à venir</h2>
     <ul>
-      <li>Profils personnalisés</li>
-      <li>Chat sécurisé</li>
-      <li>Filtres de recherche avancés</li>
+      <li>Profils personnalisés avec photo et bio</li>
+      <li>Chat sécurisé avec modération automatique</li>
+      <li>Filtres de recherche avancés par intérêt, région, âge</li>
+      <li>Notifications en temps réel</li>
     </ul>
   </section>
 
   <section id="apropos">
     <h2>Pourquoi nous choisir ?</h2>
-    <p>
-      RencontreConnect est une application de rencontre conçue pour tous, favorisant des échanges sains et une communauté bienveillante.
-    </p>
+    <p>RencontreConnect est une application inclusive et respectueuse, pensée pour favoriser des rencontres durables. Notre objectif est de créer un espace sécurisé pour tous les utilisateurs.</p>
+    <p>Grâce à des outils de sécurité modernes, une modération humaine, et un design simple, vous pouvez rencontrer des personnes en toute confiance.</p>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Pour toute question : <a href="mailto:contact@rencontreconnect.com">contact@rencontreconnect.com</a></p>
+    <p>Une question, une suggestion ? Écrivez-nous à <a href="mailto:contact@rencontreconnect.com">contact@rencontreconnect.com</a></p>
   </section>
 
   <footer>
-    &copy; 2025 RencontreConnect. Tous droits réservés.
+    &copy; 2025 RencontreConnect — Tous droits réservés.
   </footer>
 
 </body>
