@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RencontreConnect</title>
+  <title>Tableau de bord - RencontreConnect</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      scroll-behavior: smooth;
       background-color: #f8f8f8;
     }
     header {
@@ -17,100 +16,59 @@
       padding: 20px;
       text-align: center;
     }
-    nav {
-      background-color: #c2185b;
+    main {
+      padding: 40px;
+      text-align: center;
+    }
+    .users {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-      padding: 10px 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 600px;
-      margin: auto;
-      background: white;
-      border-radius: 10px;
       margin-top: 30px;
+    }
+    .user-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 200px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #c2185b;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    input[type="text"], input[type="email"], input[type="password"] {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    button {
-      padding: 10px;
-      background-color: #e91e63;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #d81b60;
     }
     footer {
       text-align: center;
       padding: 20px;
       background: #f1f1f1;
+      margin-top: 40px;
     }
   </style>
 </head>
-<body id="accueil">
+<body>
 
   <header>
-    <h1>RencontreConnect</h1>
-    <p>Faites des rencontres authentiques et respectueuses</p>
+    <h1>Bienvenue sur RencontreConnect</h1>
+    <p>Vous êtes maintenant connecté</p>
   </header>
 
-  <nav>
-    <a href="#accueil">Accueil</a>
-    <a href="#inscription">Inscription</a>
-    <a href="#connexion">Connexion</a>
-  </nav>
-
-  <section id="accueil">
-    <h2>Bienvenue sur RencontreConnect</h2>
-    <p>Notre plateforme favorise les échanges respectueux, sécurisés et sincères.</p>
-  </section>
-
-  <section id="inscription">
-    <h2>Créer un compte</h2>
-    <form>
-      <input type="text" placeholder="Nom complet" required />
-      <input type="email" placeholder="Adresse e-mail" required />
-      <input type="password" placeholder="Mot de passe" required />
-      <button type="submit">S'inscrire</button>
-    </form>
-  </section>
-
-  <section id="connexion">
-    <h2>Se connecter</h2>
-    <form>
-      <input type="email" placeholder="Adresse e-mail" required />
-      <input type="password" placeholder="Mot de passe" required />
-      <button type="submit">Connexion</button>
-    </form>
-  </section>
+  <main>
+    <h2>Utilisateurs en ligne</h2>
+    <div class="users">
+      <div class="user-card">
+        <strong>Alex</strong><br>
+        29 ans, Paris
+      </div>
+      <div class="user-card">
+        <strong>Sara</strong><br>
+        26 ans, Lyon
+      </div>
+      <div class="user-card">
+        <strong>Yanis</strong><br>
+        31 ans, Marseille
+      </div>
+    </div>
+  </main>
 
   <footer>
-    &copy; 2025 RencontreConnect — Tous droits réservés.
+    &copy; 2025 RencontreConnect — Espace membre
   </footer>
 
 </body>
