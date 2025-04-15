@@ -1,93 +1,48 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RencontreConnect</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
       font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
+      margin: 0;
+      scroll-behavior: smooth;
     }
-
     header {
-      background-color: #ff3366;
+      background-color: #e91e63;
       color: white;
-      padding: 20px 0;
+      padding: 20px 10px;
       text-align: center;
     }
-
     nav {
-      background-color: #e6005c;
+      background-color: #c2185b;
       display: flex;
       justify-content: center;
+      gap: 20px;
       padding: 10px 0;
     }
-
     nav a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 50px 20px;
-      background: #ffe6ec;
-    }
-
-    .hero h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 1.2em;
-    }
-
-    .section {
+    section {
       padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
     }
-
+    h2 {
+      color: #c2185b;
+    }
     footer {
-      background-color: #333;
-      color: white;
+      background: #f1f1f1;
+      padding: 20px;
       text-align: center;
-      padding: 20px 10px;
-      margin-top: 40px;
-    }
-
-    @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 1.8em;
-      }
-
-      nav {
-        flex-direction: column;
-      }
-
-      nav a {
-        margin: 10px 0;
-      }
+      font-size: 14px;
     }
   </style>
 </head>
-<body>
+<body id="top">
 
   <header>
     <h1>RencontreConnect</h1>
@@ -95,40 +50,46 @@
   </header>
 
   <nav>
-    <a href="#">Accueil</a>
-    <a href="#">Fonctionnalités</a>
-    <a href="#">À propos</a>
-    <a href="#">Contact</a>
+    <a href="#top">Accueil</a>
+    <a href="#fonctionnalites">Fonctionnalités</a>
+    <a href="#apropos">À propos</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <section class="hero">
-    <h1>Bienvenue sur RencontreConnect</h1>
-    <p>Notre plateforme met l'accent sur le respect, la sécurité et la vraie connexion entre les personnes.</p>
+  <section id="bienvenue">
+    <h2>Bienvenue sur RencontreConnect</h2>
+    <p>
+      Notre plateforme met l'accent sur le respect, la sécurité et la vraie connexion entre les personnes.
+    </p>
   </section>
 
-  <section class="section">
-    <h2>Pourquoi nous choisir ?</h2>
-    <p>RencontreConnect est une application de rencontre conçue pour tous, favorisant des échanges sains et une communauté bienveillante.</p>
-    <p>Nos fonctionnalités innovantes permettent aux utilisateurs de se connecter facilement et en toute sécurité.</p>
-  </section>
-
-  <section class="section">
+  <section id="fonctionnalites">
     <h2>Fonctionnalités à venir</h2>
     <ul>
       <li>Profils personnalisés</li>
       <li>Chat sécurisé</li>
       <li>Filtres de recherche avancés</li>
-      <li>Suggestions intelligentes</li>
     </ul>
   </section>
 
+  <section id="apropos">
+    <h2>Pourquoi nous choisir ?</h2>
+    <p>
+      RencontreConnect est une application de rencontre conçue pour tous, favorisant des échanges sains et une communauté bienveillante.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Pour toute question : <a href="mailto:contact@rencontreconnect.com">contact@rencontreconnect.com</a></p>
+  </section>
+
   <footer>
-    <p>&copy; 2025 RencontreConnect. Tous droits réservés.</p>
+    &copy; 2025 RencontreConnect. Tous droits réservés.
   </footer>
 
 </body>
 </html>
-
 
 
 
