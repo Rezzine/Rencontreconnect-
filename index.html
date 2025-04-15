@@ -1,62 +1,133 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RencontreConnect</title>
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #ffe0ec, #fbd3e9);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      color: #c2185b;
+      padding: 0;
+      box-sizing: border-box;
     }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 1.1em;
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
       color: #333;
-      margin-bottom: 30px;
+      line-height: 1.6;
     }
-    .buttons a {
-      background-color: #c2185b;
+
+    header {
+      background-color: #ff3366;
       color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #e6005c;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
       text-decoration: none;
-      padding: 12px 20px;
-      border-radius: 25px;
-      margin: 10px;
       font-weight: bold;
-      transition: background 0.3s ease;
     }
-    .buttons a:hover {
-      background-color: #ad1457;
+
+    nav a:hover {
+      text-decoration: underline;
     }
-    .footer {
-      font-size: 0.9em;
-      color: #555;
-      margin-top: 30px;
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: #ffe6ec;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 1.8em;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Bienvenue sur RencontreConnect</h1>
-  <p>Un site de rencontre basé sur le respect, pour tous.</p>
-  <div class="buttons">
-    <a href="inscription (1).html">Créer un compte</a>
-    <a href="connexion .html">Se connecter</a>
-    <a href="#">Découvrir</a>
-  </div>
-  <div class="footer">Mise à jour : avril 2025</div>
+
+  <header>
+    <h1>RencontreConnect</h1>
+    <p>Faites des rencontres authentiques et respectueuses</p>
+  </header>
+
+  <nav>
+    <a href="#">Accueil</a>
+    <a href="#">Fonctionnalités</a>
+    <a href="#">À propos</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Bienvenue sur RencontreConnect</h1>
+    <p>Notre plateforme met l'accent sur le respect, la sécurité et la vraie connexion entre les personnes.</p>
+  </section>
+
+  <section class="section">
+    <h2>Pourquoi nous choisir ?</h2>
+    <p>RencontreConnect est une application de rencontre conçue pour tous, favorisant des échanges sains et une communauté bienveillante.</p>
+    <p>Nos fonctionnalités innovantes permettent aux utilisateurs de se connecter facilement et en toute sécurité.</p>
+  </section>
+
+  <section class="section">
+    <h2>Fonctionnalités à venir</h2>
+    <ul>
+      <li>Profils personnalisés</li>
+      <li>Chat sécurisé</li>
+      <li>Filtres de recherche avancés</li>
+      <li>Suggestions intelligentes</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 RencontreConnect. Tous droits réservés.</p>
+  </footer>
+
 </body>
 </html>
-
 
 
 
